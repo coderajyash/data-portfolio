@@ -137,9 +137,9 @@ export const FEATURED_PROJECT = {
     "Scheduled ingestion from the Energy-Charts and Open-Meteo APIs with GitHub Actions.",
     "Bronze and silver layers in PySpark on Delta tables; gold layer as plain, reviewable SQL models.",
     "Zero-row SQL data tests guard every gold model; CI/CD deploys jobs with Databricks Asset Bundles.",
-    "Power BI report on the gold layer, plus a price forecast and an AI-written daily brief whose numbers are checked automatically.",
+    "Power BI report for daily updates in the findings connected to the gold tables on Databricks.",
   ],
-  flow: ["Energy-Charts + Open-Meteo APIs", "Bronze · raw Delta", "Silver · cleaned PySpark", "Gold · SQL models", "Power BI + AI daily brief"],
+  flow: ["Energy-Charts + Open-Meteo APIs", "Bronze · raw Delta", "Silver · cleaned PySpark", "Gold · SQL models", "Power BI"],
   technologies: ["Databricks", "PySpark", "Delta Lake", "SQL", "Power BI", "GitHub Actions", "LLM"],
 };
 
