@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ink font-sans text-neutral-300 antialiased;
+    font-optical-sizing: auto;
+    letter-spacing: -0.005em;
+  }
+  ::selection {
+    @apply bg-lime text-ink;
+  }
+  section {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+@layer components {
+  /* Small monospace label, as in the reference ("FASTER REVIEWS") */
+  .eyebrow {
+    @apply text-[0.7rem] font-medium uppercase tracking-[0.14em] text-neutral-500 sm:text-xs;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-neutral-300 lg:px-3.5 lg:text-[0.8rem] transition-colors duration-200;
+  }
+  .chip:hover {
+    @apply border-lime/40 text-lime;
+  }
+
+  .btn-lime {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-lime px-6 py-3 text-sm font-semibold text-ink sm:text-base shadow-glow transition-all duration-200 hover:bg-lime-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-6 py-3 text-sm font-semibold text-white sm:text-base backdrop-blur transition-all duration-200 hover:border-lime/50 hover:text-lime focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime;
+  }
+
+  .panel {
+    @apply rounded-2xl border border-white/[0.08] bg-gradient-to-b from-ink-700/90 to-ink-800/90 backdrop-blur-sm;
+  }
+  .panel-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-lime/30;
+  }
+}
+
+/* Lime glow that rises from the bottom of the hero */
+.hero-glow {
+  background:
+    radial-gradient(60% 55% at 50% 100%, rgba(198, 244, 50, 0.38) 0%, rgba(198, 244, 50, 0.12) 40%, transparent 72%),
+    radial-gradient(35% 30% at 50% 100%, rgba(221, 250, 126, 0.35) 0%, transparent 70%);
+}
+
+/* Vertical light streaks behind the hero cards */
+.hero-streaks {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(198, 244, 50, 0.09) 0px,
+    rgba(198, 244, 50, 0.09) 1px,
+    transparent 1px,
+    transparent 14px
+  );
+  -webkit-mask-image: radial-gradient(55% 80% at 50% 100%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(55% 80% at 50% 100%, #000 30%, transparent 75%);
+}
+
+/* Hero data streams: a slow pulse of light travelling along each line */
+.stream-pulse {
+  stroke-dasharray: 110 890;
+  animation: stream-flow 7s linear infinite;
+}
+.stream-glow {
+  filter: drop-shadow(0 0 6px rgba(198, 244, 50, 0.9));
+}
+@keyframes stream-flow {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Faint grid used in section backgrounds */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%);
+}
+
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Hide scrollbars on horizontal card rails (mobile) */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
