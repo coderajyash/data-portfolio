@@ -5,7 +5,7 @@
 export const PROFILE = {
   name: "Yash Raj Singh",
   role: "Data & Analytics Engineer",
-  availability: "Based in the Netherlands · Full right to work",
+  availability: "Based in the Netherlands (Full right to work)",
   github: "https://github.com/coderajyash",
   linkedin: "https://www.linkedin.com/in/yashrajsingh15",
   // Served from /public — replace the PDF there to update it.
@@ -30,8 +30,8 @@ export const ABOUT = [
 
 export const ABOUT_FACTS = [
   { label: "Focus", value: "Data & analytics engineering" },
-  { label: "Core stack", value: "SQL · PySpark · Databricks" },
-  { label: "Location", value: "Netherlands · full right to work" },
+  { label: "Core stack", value: "Python · SQL · Databricks" },
+  { label: "Location", value: "Netherlands · India" },
   { label: "Education", value: "MSc Computer Science (Merit), QMUL" },
 ];
 
@@ -180,8 +180,8 @@ export const PROJECTS = [
   },
   {
     title: "AI Handwritten Maths Solver",
-    category: "Applied AI · Live demo",
-    link: "https://calc-fe-math.vercel.app/",
+    category: "Applied AI",
+    link: "https://github.com/coderajyash/calc-fe",
     points: [
       "Reads hand-drawn equations from a canvas and solves them with Google's Gemini model.",
       "Handles algebra and physics-style word problems end to end.",
