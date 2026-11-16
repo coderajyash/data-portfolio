@@ -16,8 +16,8 @@ export const PROFILE = {
 export const ABOUT_STAGES = ["Messy sources", "Ingest", "Clean", "Model", "Trusted insight"];
 
 export const ABOUT = [
-  "I'm a data and analytics engineer. At IndiaMART, India's largest online B2B marketplace, I spent 18 months turning large-scale search data into clean Delta tables with SQL, Python and PySpark, which product and data science teams used to make decisions.",
-  "I now build medallion lakehouses on Databricks and model data into star schemas for reporting. I use AI coding tools to write and review data-manipulation code faster, and I check their output carefully.",
+  "I'm a data and analytics engineer. At IndiaMART, India's largest online B2B marketplace, I built the training datasets behind the search team's NLP models: I wrote scrapers to collect text from PDF documents, online dictionaries and articles, then cleaned and standardised it with Python and PySpark so the models trained on consistent, reliable data.",
+  "I also built a self-service tool for audit data delivery, a small React and Flask app that let other teams run our query-correction models and retrieve the results themselves, replacing a manual request process handled by my team. Today I build medallion lakehouses on Databricks, model data into star schemas for reporting, and use AI coding tools to write and review data code faster.",
 ];
 
 export const ABOUT_FACTS = [
