@@ -17,7 +17,7 @@ export const ABOUT_STAGES = ["Messy sources", "Ingest", "Clean", "Model", "Trust
 
 export const ABOUT = [
   "I'm a data and analytics engineer. At IndiaMART, India's largest online B2B marketplace, I built the training datasets behind the search team's NLP models: I wrote scrapers to collect text from PDF documents, online dictionaries and articles, then cleaned and standardised it with Python and PySpark so the models trained on consistent, reliable data.",
-  "I also built a self-service tool for audit data delivery, a small React and Flask app that let other teams run our query-correction models and retrieve the results themselves, replacing a manual request process handled by my team. Today I build medallion lakehouses on Databricks, model data into star schemas for reporting, and use AI coding tools to write and review data code faster.",
+  "I also built a self-service tool for audit data delivery, a small React and Flask app that let other teams run our query-correction models and retrieve the results themselves, replacing a manual request process handled by my team. Currently, I’m building end-to-end data projects on Databricks: medallion pipelines in PySpark, star-schema models for reporting, and AI coding tools to speed up writing and reviewing the code.",
 ];
 
 export const ABOUT_FACTS = [
@@ -107,12 +107,13 @@ export const EXPERIENCES = [
     location: "Delhi, India",
     highlight: "Named a Top Performer for the year",
     points: [
-      "Analysed buyer search data with Pandas and Spark SQL to find problem areas such as zero-result searches, and built summary Delta tables so product and data science teams could track trends themselves.",
+           "Built training datasets for the search team's NLP models, writing Python scrapers (BeautifulSoup, Selenium) to collect 500,000+ bilingual records from PDF documents, online dictionaries and articles.",
       "Cleaned and normalised raw search queries with Python and PySpark, handling Hinglish, transliterated and misspelt text and removing duplicates, so the query classification model received consistent, accurate data.",
-      "Built Python scrapers (BeautifulSoup, Selenium) that collected 500,000+ bilingual records used as training data for the search team's NLP models.",
+      "Automated audit data delivery with a self-service React and Flask tool, so other teams could run the query-correction models and retrieve results directly, with no manual work from the team.",
+      "Analysed buyer search data with Pandas and Spark SQL to find problem areas such as zero-result searches.",
       "Worked on a caching layer (RabbitMQ, Cassandra) for frequently classified queries that cut search response times by about 40%.",
     ],
-    technologies: ["PySpark", "Spark SQL", "Delta Lake", "Pandas", "Python", "Cassandra"],
+    technologies: ["PySpark", "Spark SQL", "Pandas", "Python", "Cassandra"],
   },
 ];
 
@@ -120,9 +121,9 @@ export const EXPERIENCES = [
 // TODO: set `link` to the project's GitHub repo URL once it's public.
 export const FEATURED_PROJECT = {
   title: "NL Energy Lakehouse",
-  status: "In progress",
+  status: "Core pipeline live · dbt in progress",
   category: "Data & Analytics Engineering",
-  link: "https://github.com/coderajyash",
+  link: "https://github.com/coderajyash/nl-energy-lakehouse",
   summary:
     "End-to-end lakehouse on Dutch electricity data: day-ahead prices, demand and generation every 15 minutes, joined with weather history, landed in Databricks and served in Power BI.",
   points: [
@@ -130,6 +131,7 @@ export const FEATURED_PROJECT = {
     "Bronze and silver layers in PySpark on Delta tables; gold layer as plain, reviewable SQL models.",
     "Zero-row SQL data tests guard every gold model; CI/CD deploys jobs with Databricks Asset Bundles.",
     "Power BI report for daily updates in the findings connected to the gold tables on Databricks.",
+    "Next up: migrating the gold layer to dbt, with further extensions in progress."
   ],
   flow: ["Energy-Charts + Open-Meteo APIs", "Bronze · raw Delta", "Silver · cleaned PySpark", "Gold · SQL models", "Power BI"],
   technologies: ["Databricks", "PySpark", "Delta Lake", "SQL", "Power BI", "GitHub Actions", "LLM"],
@@ -221,8 +223,8 @@ export const CERTIFICATIONS = [
 ];
 
 export const CONTACT = {
-  location: "Netherlands",
-  numbers: ["+44 7407 842367"],
+  location: "Netherlands | India (Open to relocation in any city in the Netherlands and India)",
+  numbers: ["+44 7407 842367","+91 9773861502"],
   email: "yashrajsingh.nl@gmail.com",
 };
 
