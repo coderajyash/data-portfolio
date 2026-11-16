@@ -5,7 +5,7 @@
 export const PROFILE = {
   name: "Yash Raj Singh",
   role: "Data & Analytics Engineer",
-  availability: "Based in the Netherlands (Full right to work)",
+  availability: "Open to Work in India & Netherlands(No Sponsorship required)",
   github: "https://github.com/coderajyash",
   linkedin: "https://www.linkedin.com/in/yashrajsingh15",
   // Served from /public — replace the PDF there to update it.
