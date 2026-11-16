@@ -12,20 +12,12 @@ export const PROFILE = {
   resume: "/Yash-Raj-Singh-Resume.pdf",
 };
 
-export const HERO = {
-  // Words wrapped in *asterisks* are highlighted in lime.
-  headlineTop: "Raw data in.",
-  headlineBottom: "*Reliable* insight out.",
-  subline:
-    "Data & analytics engineer building lakehouse pipelines with SQL, PySpark and Databricks, and using AI to automate the manual work around them.",
-};
-
-// Labels under the animated data streams in the hero (first and last show on phones)
-export const HERO_STAGES = ["Messy sources", "Ingest", "Clean", "Model", "Trusted insight"];
+// Labels under the animated data streams on the opening screen (first and last show on phones)
+export const ABOUT_STAGES = ["Messy sources", "Ingest", "Clean", "Model", "Trusted insight"];
 
 export const ABOUT = [
-  "I'm a data and analytics engineer with 18 months at IndiaMART, India's largest online B2B marketplace. There I analysed large-scale search data with SQL, Python and PySpark, built the summary tables that product and data science teams used to make decisions, and prepared the training data behind the search team's NLP models.",
-  "Today I build medallion lakehouses on Databricks, model data into clean star schemas for reporting, and use AI where it removes manual work, from private RAG tools to reviewing AI-generated analyses against detailed rubrics.",
+  "I'm a data and analytics engineer. At IndiaMART, India's largest online B2B marketplace, I spent 18 months turning large-scale search data into clean Delta tables with SQL, Python and PySpark, which product and data science teams used to make decisions.",
+  "I now build medallion lakehouses on Databricks and model data into star schemas for reporting. I use AI coding tools to write and review data-manipulation code faster, and I check their output carefully.",
 ];
 
 export const ABOUT_FACTS = [
@@ -68,9 +60,9 @@ export const SKILL_GROUPS = [
     skills: ["Pandas", "NumPy", "BeautifulSoup", "Selenium", "REST APIs", "Data cleaning"],
   },
   {
-    title: "AI for automation",
-    blurb: "LLMs where they save real hours.",
-    skills: ["RAG", "LangChain", "Hugging Face", "Qdrant", "Ollama", "LLM output evaluation", "Claude Code"],
+    title: "AI-assisted development",
+    blurb: "Using AI to write and review data code faster.",
+    skills: ["Claude Code", "AI-assisted SQL & PySpark", "LLM output evaluation", "RAG", "LangChain", "Hugging Face", "Qdrant", "Ollama"],
   },
   {
     title: "Machine learning",
@@ -158,7 +150,7 @@ export const PROJECTS = [
   },
   {
     title: "Local Document Chat: Private PDF Q&A",
-    category: "AI Automation · RAG",
+    category: "Applied AI · RAG",
     link: "https://github.com/coderajyash/RAG-pdf-chat",
     points: [
       "Fully local retrieval-augmented generation tool that answers plain-English questions about long PDFs such as policy documents and manuals.",
@@ -218,7 +210,7 @@ export const CERTIFICATIONS = [
     title: "Claude Code in Action",
     provider: "Anthropic",
     link: "https://verify.skilljar.com/c/2jnqrbcxpswr",
-    tags: ["Agentic AI", "Automation"],
+    tags: ["AI-assisted coding", "Claude Code"],
   },
   {
     title: "Machine Learning with Python",

@@ -139,7 +139,7 @@ const Projects = () => (
       index="04"
       eyebrow="Projects"
       title="Things I've *built*."
-      intro="Lakehouse pipelines and analytics up front, then the AI and ML work I use to automate and improve them."
+      intro="Lakehouse pipelines and analytics up front, then my applied AI and machine learning projects."
     />
     <Featured />
     <div className="mt-4 grid gap-4 md:grid-cols-2 lg:mt-5 lg:gap-5">

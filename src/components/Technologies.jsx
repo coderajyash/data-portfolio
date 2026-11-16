@@ -26,7 +26,7 @@ const Technologies = () => (
       index="02"
       eyebrow="Toolkit"
       title="Built for the *whole* pipeline."
-      intro="From ingestion to the dashboard: the data and analytics engineering stack I use day to day, plus the AI and ML I use to automate around it."
+      intro="From ingestion to the dashboard: the data and analytics engineering stack I use day to day, plus the AI tools I use to write data code faster."
     />
 
     <div className="grid gap-4 sm:grid-cols-2 lg:gap-5 xl:grid-cols-4">

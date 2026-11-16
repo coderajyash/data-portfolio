@@ -22,8 +22,8 @@ export default {
       },
       fontFamily: {
         // One family everywhere for a clean, consistent look
-        sans: ["Geist", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
-        mono: ["Geist", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["Manrope", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
+        mono: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
         glow: "0 0 40px -8px rgba(198, 244, 50, 0.55)",

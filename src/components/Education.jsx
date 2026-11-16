@@ -15,7 +15,7 @@ const Education = () => (
       index="05"
       eyebrow="Education & certifications"
       title="Always *learning*."
-      intro="A computer science foundation with a focus on data, plus certifications in data engineering, machine learning and agentic AI."
+      intro="A computer science foundation with a focus on data, plus certifications in data engineering, machine learning and AI-assisted coding."
     />
 
     {/* degrees side by side */}
